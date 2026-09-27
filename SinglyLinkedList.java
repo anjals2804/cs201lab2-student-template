@@ -110,6 +110,7 @@ public class SinglyLinkedList<E extends Comparable<E>> {
             current = current.getNext();
         }
 
+        //sort to compare
         ArrayList<Node<E>> sorted = new ArrayList<>(original);
         Collections.sort(sorted, (a, b) ->
             a.getElement().compareTo(b.getElement())
